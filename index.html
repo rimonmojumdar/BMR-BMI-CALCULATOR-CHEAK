@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR & BMI Calculator</title>
+    <link rel="stylesheet" href="./styel.css"> 
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>BMR Calculator</h1>
+
+        <div class="input-group">
+            <label for="age">AGE</label>
+            <input type="number" id="age" value="28" min="1" placeholder="Years">
+        </div>
+
+        <div class="input-group">
+            <label>GENDER</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="height">HEIGHT</label>
+            <div class="input-with-unit">
+                <input type="number" id="height" value="180" min="1" placeholder="e.g., 180">
+                <span>cm</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="weight">WEIGHT</label>
+            <div class="input-with-unit">
+                <input type="number" id="weight" value="65" min="1" placeholder="e.g., 65">
+                <span>kg</span>
+            </div>
+        </div>
+           <div class="input-group">
+            <label>HEIGHT</label>
+    <div class="input-with-unit multi-input">
+        <input type="number" id="height-ft" value="5" min="1" placeholder="Feet">
+        <span>ft</span>
+        <input type="number" id="height-in" value="11" min="0" max="11" placeholder="Inches">
+        <span>in</span>
+    </div>
+   </div>
+
+        <button id="calculate-btn">CALCULATE</button>
+
+        <div class="result-area">
+            <p id="bmr-result" class="result-value">0</p>
+            <p class="result-label">Calories/day (BMR)</p>
+        </div>
+     
+        
+        <div class="health-status-area">
+            <p class="status-label">BMI: <span id="bmi-value">0.0</span></p>
+            <p id="health-status" class="status-message">এখানে স্বাস্থ্যের অবস্থা দেখা যাবে</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script> 
+</body>
+</html>
+            
+
+           
+            
+      
+
+
+
